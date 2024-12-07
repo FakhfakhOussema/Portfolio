@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oussema Fakhfakh</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/mediaqueries.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <a href="../index.html">Accueil</a>
+            <a href="parcours_académique.html">Parcours académique</a>
+            <a href="compétences.html">Compétences</a>
+            <a href="experiencePro.html">Expérience professionnelle</a>
+            <a href="interet.html">Centre d'intérêt</a>
+            <a href="quiz.html" class="menu__link_active">Quiz</a>
+            <a href="contact.html">Contact</a>
+            <div id="socials-container">
+                <img src="../assets/linkedin.png" alt="My LinkedIn profile" class="icon_nav" onclick="location.href='https://linkedin.com/in/fakhfakhoussema'">
+                <img src="../assets/github.png" alt="My Github profile" class="icon_nav" onclick="location.href='https://github.com/FakhfakhOussema'">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="quiz-container">
+                <h1>Quiz Football</h1>
+                <form id="quizForm">
+                    <div class="question">
+                        <label>1. Quel pays a remporté la Coupe du Monde de 2018 ?</label>
+                        <input type="radio" name="q1" value="1"> France<br>
+                        <input type="radio" name="q1" value="0"> Croatie<br>
+                        <input type="radio" name="q1" value="0"> Brésil<br>
+                    </div>
+            
+                    <div class="question">
+                        <label>2. Qui est le meilleur buteur de l'histoire de la Ligue des Champions ?</label>
+                        <input type="radio" name="q2" value="1"> Cristiano Ronaldo<br>
+                        <input type="radio" name="q2" value="0"> Lionel Messi<br>
+                        <input type="radio" name="q2" value="0"> Raul<br>
+                    </div>
+            
+                    <div class="question">
+                        <label>3. Quel club a remporté la Ligue des Champions en 2020 ?</label>
+                        <input type="radio" name="q3" value="1"> Bayern Munich<br>
+                        <input type="radio" name="q3" value="0"> Paris Saint-Germain<br>
+                        <input type="radio" name="q3" value="0"> Real Madrid<br>
+                    </div>
+            
+                    <div class="question">
+                        <label>4. En quelle année Diego Maradona a-t-il marqué son célèbre but de la "Main de Dieu" ?</label>
+                        <input type="radio" name="q4" value="1"> 1986<br>
+                        <input type="radio" name="q4" value="0"> 1990<br>
+                        <input type="radio" name="q4" value="0"> 1982<br>
+                    </div>
+            
+                    <div class="question">
+                        <label>5. Quel est le surnom de l'équipe nationale du Brésil ?</label>
+                        <input type="radio" name="q5" value="1"> Seleção<br>
+                        <input type="radio" name="q5" value="0"> Les Bleus<br>
+                        <input type="radio" name="q5" value="0"> Les Azzurri<br>
+                    </div>
+            
+                    <div class="question">
+                        <label>6. Quelle équipe a remporté la Coupe du Monde 2014 ?</label>
+                        <input type="radio" name="q6" value="0"> Argentine<br>
+                        <input type="radio" name="q6" value="1"> Allemagne<br>
+                        <input type="radio" name="q6" value="0"> Espagne<br>
+                    </div>
+            
+                    <div class="question">
+                        <label>7. Qui est l'entraîneur actuel du FC Barcelone (2024) ?</label>
+                        <input type="radio" name="q7" value="0"> Pep Guardiola<br>
+                        <input type="radio" name="q7" value="1"> Xavi Hernandez<br>
+                        <input type="radio" name="q7" value="0"> Luis Enrique<br>
+                    </div>
+            
+                    <div class="question">
+                        <label>8. Quel est le pays hôte de la Coupe du Monde 2022 ?</label>
+                        <input type="radio" name="q8" value="1"> Qatar<br>
+                        <input type="radio" name="q8" value="0"> Russie<br>
+                        <input type="radio" name="q8" value="0"> Canada<br>
+                    </div>
+            
+                    <div class="question">
+                        <label>9. Quelle équipe a remporté la Premier League en 2021 ?</label>
+                        <input type="radio" name="q9" value="0"> Liverpool<br>
+                        <input type="radio" name="q9" value="1"> Manchester City<br>
+                        <input type="radio" name="q9" value="0"> Chelsea<br>
+                    </div>
+            
+                    <div class="question">
+                        <label>10. Qui a marqué le but de la victoire en finale de la Coupe du Monde 1998 ?</label>
+                        <input type="radio" name="q10" value="1"> Emmanuel Petit<br>
+                        <input type="radio" name="q10" value="0"> Zinedine Zidane<br>
+                        <input type="radio" name="q10" value="0"> Thierry Henry<br>
+                    </div>
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-color-2" onclick="calculateScore()">Voir le score</button>
+                    </div>
+                </form>
+            
+                <div id="score"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="parcours_académique.html">Parcours académique</a>
+            <a href="compétences.html">Compétences</a>
+            <a href="experiencePro.html">Expérience professionnelle</a>
+            <a href="interet.html">Centre d'intérêt</a>
+            <a href="quiz.html" class="menu__link_active">Quiz</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+      </footer>
+</body>
+</html>
